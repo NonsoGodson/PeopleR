@@ -1,22 +1,22 @@
-#PeopleR ~ Anything is possible
+# PeopleR ~ Anything is possible
 
-#Introduction
-##The Project
+# Introduction
+## The Project
 Everybody knows the feeling of being alone, we all need friends both male and female friends. However, humans need to socialize! This is why we created PeopleR.
 
 PeopleR is a dating site for humans! People can create their own profile and start swiping through other people's profile. If they want to meet someone, they can "like" their profile, and if that person likes them back, it's a match! From there, the two users can decide to contact each other and organize a playdate. If they don't like that person, they can just "pass" it.
 
 Other features include: editing the person's profile, modifying the user settings, and a "previous" button to see the previous profile again.
 
-###The Context
+### The Context
 This project is our Portfolio Project, concluding our Foundations Year at ALX. We were able to choose who we wanted to work with and what we wanted to work on, as long as we present a working program at the end of the three weeks of development.
 
-###The Team
+### The Team
 We are two people enthusiasts who are passionate about coding but also like to keep it fun!
 
 Nonso Godson Onyedumekwu, Chineze Ogugua
 
-###Blog posts
+### Blog posts
 After the development phase, we each wrote a blog post to reflect on the PeopleR journey.
 
 Marc's article: PeopleR: It’s Like Tinder 
@@ -41,14 +41,14 @@ Once this is all done you're ready to run PeopleR! Still in the root of this dir
 
 When you are finished simply go back to your terminal and hit ctrl + c to quit the program.
 
-###Known bugs
+### Known bugs
 Some transitions are not as fluid as expected, and due to API calls lag can be a bit off.
 Issue when viewing on mobile. Many of the assets become squashed vertically.
 
-###Overview
+### Overview
 Our web app is a single-page app, coded mainly in Javascript. PeopleR is front-end heavy, meaning that we focused our time and energy in developing a simple but easy to use and fun app. We designed most of the User Interface, using plain CSS and some native Vue transitions and animations. We also incorporated some BootstrapVue elements which offered a simple solution for some features like image uploading.
 
-###Vue.js
+### Vue.js
 For this project, we decided to focus on learning a new front-end framework. Following the advice of mentors and professionals, we chose to learn and use Vue.js.
 
 Every different section of the app is a Vue component, and all the components can be found in the directory src/components/. The main component "App" is defined in App.vue, and is the entry point of the app.
@@ -59,10 +59,10 @@ The main.js file contains the instanciation of the Vue for the entire app, as we
 
 Another interesting point about Vue.js is that it allowed us to use a store, defined in store.js. This store is a front-end store that keeps track of the state of components and data throughout the app. This is were the data from our database requests is stored and updated before going back in the database. This store also allows to not pass properties from each component to all its children components, and to access data from anywhere without having to use an event bus.
 
-###List of components
+### List of components
 These components make up what a user experiences when they check out PeopleR. Each component contains the code for a specific page of the app. These components can be located in src/components.
 
-###Component	and Description
+### Component	and Description
 Landing.vue - The landing page a user sees when they navigate to PeopleR.
 Login.vue - The login page. There's a link to go to the Signup page if a user hasn't signed up.
 Matches.vue - Page where users can see the other users they've matched with. A match occurs when two users have liked each other.
@@ -76,20 +76,20 @@ We decided to go with Firebase for our backend/database as it provides all the f
 
 Firebase was incredibly helpful while we were testing as it allowed us to look through each user's collection of information. This was helpful while we were implementing the logic for user likes and matches.
 
-###Firestore
+### Firestore
 Since our app requires frequent and numerous database calls, Firestore provides a reliable and responsive solution to achieve a seamless experience. Practically all user information, such as display name, personal info, and even their like/match lists are kept in the Firestore. This lets us quickly populate each vue with relevant information.
 
 For instance, when a user logs in they'll be taken to the main Swiping component where another user's image, name, age, and location will be displayed. They can choose to 'like' or 'pass' the person, which will immediately populate with another person's information. Firebase's quick database calls populate this information and help keep this functionality snappy.
 
 Images are kept in the Firestore as a link to where they're held in cloud storage.
 
-###Authentication
+### Authentication
 As our app connects people with each other, authentication is a necessity. Firebase provides a straightforward and easy-to-implement solution so we can focus on designing an accessible app. Users simply sign up with an existing email address and a password of their choice. Firebase Authentication does the heavy lifting to make sure users are authentic.
 
-###Cloud Firestore
+### Cloud Firestore
 The obvious choice for storing people's photos. It provides straightforward implementation for users to upload their photo and a relatively quick way to call and display these images for users to sift through.
 
-###Acknowledgments
+### Acknowledgments
 ALX School staff - For the help, advice and resources they provided us with during this project and during all our curriculum.
 
 Cohort 8 and all ALX students - For your friendship, invaluable support, and insight not only for this project, but over the last year.
