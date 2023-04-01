@@ -6,20 +6,20 @@
             <div>&nbsp;</div>
             <div>&nbsp;</div>
             <div class="mobile-table">
-                <h3>Check back soon for the mobile version!</h3>
+                <h3>Check out for our mobile app launch!</h3>
                 <img class="no-mobile" src="./../../public/icons/sad_puppr.png">
             </div>
         </div>
         <div class="header-landing">
-            <img class="peopler-logo" src="./../../public/icons/logo.png">
+            <img class="peopler-logo" src="./../../public/icons/peoplerlogo.png">
             <p :class="choice1" v-on:click="showIntro">
-                <img class="humans" src="./../../public/icons/matches.png">
+                <img class="people" src="./../../public/icons/connections_icon.png">
                 Introduction</p>
             <p :class="choice2" v-on:click="showFeatures">
-                <img class="humans" src="./../../public/icons/matches.png">
+                <img class="people" src="./../../public/icons/connections_icon.png">
                 Features</p>
             <p :class="choice3" v-on:click="showAbout">
-                <img class="humans" src="./../../public/icons/matches.png">
+                <img class="people" src="./../../public/icons/connections_icon.png">
                 About</p>
         </div>
         <div class="upper-container">
@@ -31,11 +31,11 @@
                 >
                     <div class="intro-top">
                         <h1>Welcome to PeopleR!</h1>
-                        <img class="my-logo" src="./../../public/icons/logo.png">
+                        <img class="my-logo" src="./../../public/icons/peoplerlogo.png">
                         <h3><i>Anything is possible</i></h3>
                         <br>
-                        <p>PeopleR is the best place on the internet to meet and relate one on one with mentors!</p>
-                        <p>Browse through list of mentors and connect to set up a discussion session.</p>
+                        <p>PeopleR is the best place for students to learn from mentors!</p>
+                        <p>Check out the list of mentors in your zone and connect.</p>
                     </div>
                 </div>
                 <div
@@ -45,23 +45,23 @@
                         <img class="signin-ss" src="./../../public/icons/signin_screen.png">
                         <div class="column1">
                             <h3>Sign up</h3>
-                            <p>Make a profile that shows all about you and your portfolio!<p>
+                            <p>Make a profile that shows all about you!<p>
                             <p>Upload a picture to show the world.</p>
                         </div>
                     </div>
                     <div class="row2">
                         <div class="column2">
                             <h3>Browse</h3>
-                            <p>Use a familiar and intuitive interface to see individuals with influence in your area</p>
-                                <p>and express interest in connecting.</p>
+                            <p>Use a familiar and intuitive interface to check for mentors you will love to connect with</p>
+                                <p>and learn from.</p>
                         </div>
                         <img class="browse-ss" src="./../../public/icons/browse_no_text.png">
                     </div>
                     <div class="row3">
-                            <img class="match-ss" src="./../../public/icons/match_screen.png">
+                            <img class="connect-ss" src="./../../public/icons/connection_screen.png">
                         <div class="column3">
                             <h3>Matches</h3>
-                            <p>Keep track of your mentors in one convenient location.</p>
+                            <p>Keep track of mentors in one convenient location.</p>
                             <p>Display the contact email for individuals and make plans to connect.</p>
                         </div>
                     </div>
@@ -73,23 +73,18 @@
                     <p>This is our Research Project, concluding our Foundations Year at <a href="https://www.alxafrica.com/">ALX School</a>.
                         We were able to choose who we wanted to work with and what we wanted to work on,
                         as long as we presented a working program at the end of the three weeks of development.</p>
-                    <p>The idea of PeopleR came from the team's passion for inter-relationship amongst the human species.
-                       There became a need for people to relate amongst themselves to improve on the level of opportunities for career growth and mentorship.
+                    <p>The idea of PeopleR came from the team's passion for career development for students.
+                       There became a need for students to learn from people who have worked the path before.
                        </p>
                     <br>
                     <h4>The Team</h4>
-                    <p>Drew Maring - <a href="https://www.linkedin.com/in/drew-maring-0a7b8b9/">LinkedIn</a>
-                        &nbsp;<a href="https://github.com/dmaring">GitHub</a>
-                        &nbsp;<a href="https://twitter.com/drewmaring">Twitter</a></p>
-                    <p>Marc Cavigli - <a href="https://www.linkedin.com/in/marccavigli/">LinkedIn</a>
-                        &nbsp;<a href="https://github.com/MCavigli">GitHub</a>
-                        &nbsp;<a href="https://twitter.com/MarcCavigli">Twitter</a></p>
-                    <p>Laura Roudge - <a href="https://www.linkedin.com/in/lauraroudge/">LinkedIn</a>
-                        &nbsp;<a href="https://github.com/lroudge">GitHub</a>
-                        &nbsp;<a href="https://twitter.com/LRoudge">Twitter</a></p>
+                    <p>Nonso Onyedumekwu - <a href="https://www.linkedin.com/in/nonso-godson-onyedumekwu-28035961/">LinkedIn</a>
+                        &nbsp;<a href="https://github.com/NonsoGodson">GitHub</a>
+                    <p>Chineze Ogugua - <a href="https://www.linkedin.com/in/chineze-ogugua/">LinkedIn</a>
+                        &nbsp;<a href="https://github.com/Chinabel">GitHub</a>
                     <br>
                     <h4>Check out the source code for PeopleR!</h4>
-                    <a href="https://github.com/lroudge/peopler">peopler on GitHub</a>
+                    <a href="https://github.com/NonsoGodson/peopler">peopler on GitHub</a>
                 </div>
             </div>
         </div>
@@ -154,12 +149,12 @@
             padding: 0;
         }
         .landing-page {
-            background-image: url('./../../public/icons/landing_page.png');
+            background-image: url('./../../public/icons/Landing_page.jpg');
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             font-family: "Bahnschrift SemiBold";
-            background-color: #FCF9EA;
+            background-color: #004242;
             position: fixed;
             top: 0;
             bottom: 0;
@@ -181,13 +176,9 @@
             text-shadow: 1px 1px #6361613b;
         }
         .header-landing > p:hover {
-            color: #f8a978;
+            color: #004242;
         }
-        .paws {
-            height: 37px;
-            width: 37px;
-        }
-        .puppr-logo {
+        .peopler-logo {
             height: 5em;
         }
         .intro p, .features p, .about p {
@@ -329,51 +320,6 @@
             display: flex;
             align-content: center;
             justify-content: flex-end;
-        }
-    }
-    /* FOR MOBILE */
-    @media screen and (max-width: 820px) {
-        .header-landing, .upper-container, .login-button {
-            display: none;       
-        }
-        .on-mobile {
-            background-image: url('./../../public/icons/landing_page_mobile.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            font-family: "Bahnschrift SemiBold";
-            background-color: #FCF9EA;
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            right: 0;
-            left: 0;
-            margin: 0 auto;
-            overflow-x: hidden;
-            height: 100%;
-            width: 100%;
-        }
-        .mobile-table {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            width: 80%;
-            height: 20%;
-            background-color: #fffffff0;
-            border-radius: 15px;
-            text-shadow: 1px 1px #6361613b;
-        }
-        .on-mobile h3 {
-            text-align: center;
-            color: #f8a978;
-        }
-        .no-mobile {
-            height: 3em;
         }
     }
 </style>
