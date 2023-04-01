@@ -3,7 +3,7 @@
         <div class="nav-bar">
             <div class="empty"></div>
             <div class="logo" style="width: 8em; height: 5.5em;">
-                <img class="logo-image" src="./../../public/icons/logo.png" style="width: 8em; height: 5.5em;">
+                <img class="logo-image" src="./../../public/icons/peoplerlogo.jpeg" style="width: 8em; height: 5.5em;">
             </div>
             <div class="empty"></div>
         </div>
@@ -45,7 +45,7 @@
                 <img src="../../public/images/image2.png">
                 <img src="../../public/images/image.jpg">
             </div>
-            <p>These dogs are waiting to meet yours!</p>
+            <p>Let's know about you!</p>
         </div>
     </div>
 </template>
