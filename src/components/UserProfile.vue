@@ -4,9 +4,9 @@
             <router-link :to="{ name: 'settings' }" class="setting-icon">
                 <img class="setting-icon" src="./../../public/icons/settings_icon.png">
             </router-link>
-            <img class="profile-icon" src="./../../public/icons/profile blue.png" style="width: 6em; height: 5.5em;">
+            <img class="profile-icon" src="./../../public/icons/profile_icon.jpeg" style="width: 6em; height: 5.5em;">
             <router-link :to="{ name: 'swiping' }" class="logo">
-                <img class="logo-image" src="./../../public/icons/profile_icon.jpeg">
+                <img class="logo-image" src="./../../public/icons/peoplerlogo.jpeg">
             </router-link>
         </div>
         <div class="profile-container">
@@ -46,7 +46,7 @@
                 </div>
                 <div>
                     <h3>Fun Facts</h3>
-                    <textarea v-model="bio" rows="4" :placeholder="this.user.profile.Info.fun_facts"></textarea>
+                    <textarea v-model="bio" rows="4" :placeholder="this.user.profile.Info.bio"></textarea>
                 </div>
                 <div class="save-logout">
                     <div class="submit">
@@ -104,7 +104,7 @@
                         "Info.age": (this.Age || this.user.profile.Info.age),
                         "Info.sex": (this.Sex || this.user.profile.Info.sex),
                         "Info.hobbies": (this.likes || this.user.profile.Info.hobbies),
-                        "Info.fun_facts": (this.bio || this.user.profile.Info.fun_facts)
+                        "Info.bio": (this.bio || this.user.profile.Info.bio)
                     })
                     .then(function () {
                         // Set the db and then set the store
