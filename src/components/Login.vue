@@ -45,7 +45,7 @@
                 <img src="../../public/images/background_signup_login.jpg">
                 <img src="../../public/images/background_signup_login.jpg">
             </div>
-            <p>Let's know more about you!</p>
+            <p>Get to learn from your mentors...</p>
         </div>
     </div>
 </template>
