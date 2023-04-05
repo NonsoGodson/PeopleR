@@ -5,10 +5,6 @@
             <div>&nbsp;</div>
             <div>&nbsp;</div>
             <div>&nbsp;</div>
-            <div class="mobile-table">
-                <h3>Check out for our mobile app launch!</h3>
-                <img class="no-mobile" src="./../../public/icons/sad_puppr.png">
-            </div>
         </div>
         <div class="header-landing">
             <img class="peopler-logo" src="./../../public/icons/peoplerlogo.png">
@@ -35,30 +31,26 @@
                         <h3><i>Anything is possible</i></h3>
                         <br>
                         <p>PeopleR is the best place for students to learn from mentors!</p>
-                        <p>Check out the list of mentors in your zone and connect.</p>
+                        <p>Catch up with mentors in your zone and connect.</p>
                     </div>
                 </div>
                 <div
                         v-if="!intro && features && !about"
                         class="features">
                     <div class="row1">
-                        <img class="signin-ss" src="./../../public/icons/signin_screen.png">
+                        <img class="signin-ss" src="./../../public/icons/login_page.mp4">
                         <div class="column1">
                             <h3>Sign up</h3>
                             <p>Make a profile that shows all about you!<p>
-                            <p>Upload a picture to show the world.</p>
+                            <p>Upload your picture.</p>
                         </div>
                     </div>
                     <div class="row2">
                         <div class="column2">
-                            <h3>Browse</h3>
-                            <p>Use a familiar and intuitive interface to check for mentors you will love to connect with</p>
-                                <p>and learn from.</p>
-                        </div>
-                        <img class="browse-ss" src="./../../public/icons/browse_no_text.png">
-                    </div>
+                            <h3>Search</h3>
+                            <p>Search for mentors you will love to connect with and learn from</p>
                     <div class="row3">
-                            <img class="connect-ss" src="./../../public/icons/connection_screen.png">
+                            <img class="connect-ss" src="./../../public/icons/profile_connection_page.jpg">
                         <div class="column3">
                             <h3>Matches</h3>
                             <p>Keep track of mentors in one convenient location.</p>
