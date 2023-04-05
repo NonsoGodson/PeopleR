@@ -78,8 +78,8 @@
                         ></textarea>
                     </div>
                     <div>
-                        <h4>Fun Facts</h4>
-                        <textarea v-model="form.funfacts" rows="4"
+                        <h4>Bio</h4>
+                        <textarea v-model="form.bio" rows="4"
                                   placeholder="I love to create new apps!"></textarea>
                     </div>
                     <div class="form-group">
@@ -167,7 +167,7 @@
                     Sex: "",
                     location: "",
                     hobbies: "",
-                    funfacts: "",
+                    bio: "",
                     firstname: "",
                     lastname: "",
                     displayName: "",
@@ -230,7 +230,7 @@
                         name: this.form.name,
                         age: this.form.age,
                         location: this.form.location,
-                        fun_facts: this.form.funfacts,
+                        bio: this.form.bio,
                         hobbies: this.form.hobbies,
                         sex: this.form.sex
                     },
