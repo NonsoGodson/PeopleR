@@ -20,10 +20,6 @@
                     </div>
                 </li>
             </ul>
-            <div class="no-matches" v-else>
-                <h4>Ouch, there seem not to be anything here...</h4>
-                <img src="../../public/icons/sad_puppr.png" class="sorry">
-            </div>
         </div>
     </div>
 </template>
@@ -53,7 +49,7 @@
             loadProfiles: function () {
                 const that = this;
                 let user = this.$store.getters.user;
-                let matchList = user.profile.connections;
+                let connectionList = user.profile.connections;
                 if (connectionList.length > 0) {
                     connectionList.forEach((item) => {
                         let currentUser;
