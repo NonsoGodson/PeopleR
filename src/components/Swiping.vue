@@ -18,21 +18,21 @@
         <!-- If a user has no connections -->
         <div class="no-connections" v-if="filteredProfiles === undefined">
             <h4>Sorry, there doesn't seem to be anything here...</h4>
-            <img src="../../public/icons/sad_puppr.png" class="sorry">
+            <img src="../../public/icons/disappointed_face.jpg" class="sorry">
         </div>
         <!-- Section containing the image/profile info -->
         <div class="back" :style="{ backgroundImage: 'url(' + backImage + ')'}"
              v-if="filteredProfiles">
             <div :class="transitionName">
                 <transition name="flip"> <!-- the card flips when a user clicks on it -->
-                    <!-- user info (likes, hobbies, fun facts) -->
+                    <!-- user info (likes, hobbies, bio) -->
                     <div
                             class="profileInfo"
                             v-on:click="hideInfo"
                             v-if="profileInfo && dataLoaded && filteredProfiles"
                     >
-                        <h2>Fun Facts</h2>
-                        <p>{{ filteredProfiles[index].Info.fun_facts }}</p>
+                        <h2>Bio</h2>
+                        <p>{{ filteredProfiles[index].Info.bio }}</p>
                         <h2>Hobbies</h2>
                         <p>{{ filteredProfiles[index].Info.hobbies }}</p>
                         <h2>Sex</h2>
@@ -168,7 +168,7 @@
                         .then(function (docRef) {
                             console.log("Document written with ID: ", docRef.id);
                             // Remove like from other user like list and add match object to
-                            // other user's matches list
+                            // other user's connection list
                             db.collection('users').doc(otherUserPro.user_id)
                                 .update({
                                     "likes": firebase.firestore.FieldValue.arrayRemove(userIdx),
