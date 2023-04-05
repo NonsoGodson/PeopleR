@@ -42,10 +42,10 @@
         </form>
         <div class="bottom-signin">
             <div class="meet-mentors">
-                <img src="../../public/images/image2.png">
-                <img src="../../public/images/image.jpg">
+                <img src="../../public/images/background_signup_login.jpg">
+                <img src="../../public/images/background_signup_login.jpg">
             </div>
-            <p>Let's know about you!</p>
+            <p>Let's know more about you!</p>
         </div>
     </div>
 </template>
