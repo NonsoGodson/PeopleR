@@ -2,9 +2,9 @@
 
 # Introduction
 ## The Project
-Everybody knows the feeling of being alone, we all need friends both male and female friends. However, humans need to socialize! This is why we created PeopleR.
+Everyone needs a mentor to guide him or her. However, reaching out to mentors can be a daunting task. This is why we created PeopleR.
 
-PeopleR is a dating site for humans! People can create their own profile and start swiping through other people's profile. If they want to meet someone, they can "like" their profile, and if that person likes them back, it's a match! From there, the two users can decide to contact each other and organize a playdate. If they don't like that person, they can just "pass" it.
+PeopleR is the best place for students to meet and learn from mentors. All they really have to do is search for mentors in their zone and connect with them. The beautiful about Peopler is that you can have more than one mentors to tutor you.
 
 Other features include: editing the person's profile, modifying the user settings, and a "previous" button to see the previous profile again.
 
@@ -15,16 +15,6 @@ This project is our Portfolio Project, concluding our Foundations Year at ALX. W
 We are two people enthusiasts who are passionate about coding but also like to keep it fun!
 
 Nonso Godson Onyedumekwu, Chineze Ogugua
-
-### Blog posts
-After the development phase, we each wrote a blog post to reflect on the PeopleR journey.
-
-Marc's article: PeopleR: It’s Like Tinder 
-Drew's article: PeopleR: The social app for people
-Laura's article: PeopleR: Learnings from building a dating site for people
-Tutorial
-Take a tour of the deployed version at people.best
--> PeopleR
 
 Here is a little preview of our main feature, the swiping through other people's profiles:
 
@@ -40,10 +30,6 @@ In case there are any missing dependencies, please execute PeopleR$ npm install 
 Once this is all done you're ready to run PeopleR! Still in the root of this directory, simply execute PeopleR$ npm run serve and give it a few seconds to get started. Once it's up, you can open your web browser and enter localhost:8080. This will allow you to try out PeopleR!
 
 When you are finished simply go back to your terminal and hit ctrl + c to quit the program.
-
-### Known bugs
-Some transitions are not as fluid as expected, and due to API calls lag can be a bit off.
-Issue when viewing on mobile. Many of the assets become squashed vertically.
 
 ### Overview
 Our web app is a single-page app, coded mainly in Javascript. PeopleR is front-end heavy, meaning that we focused our time and energy in developing a simple but easy to use and fun app. We designed most of the User Interface, using plain CSS and some native Vue transitions and animations. We also incorporated some BootstrapVue elements which offered a simple solution for some features like image uploading.
@@ -65,8 +51,7 @@ These components make up what a user experiences when they check out PeopleR. Ea
 ### Component	and Description
 Landing.vue - The landing page a user sees when they navigate to PeopleR.
 Login.vue - The login page. There's a link to go to the Signup page if a user hasn't signed up.
-Matches.vue - Page where users can see the other users they've matched with. A match occurs when two users have liked each other.
-Navbar.vue - The navigation bar that appears at the top of most every other component
+Connections.vue - Page where users can see the other users they've matched with. A match occurs when two users have liked each other.
 Settings.vue - Users can change their email address, display name, city, and zip code on this page.
 Signup.vue - Signup page for users who do not have an account. It asks for a valid email address and for them to make and confirm a password.
 Swiping.vue - The main page of PuppR where users can see another user's profile and choose whether to 'like' or 'pass.'
@@ -88,19 +73,3 @@ As our app connects people with each other, authentication is a necessity. Fireb
 
 ### Cloud Firestore
 The obvious choice for storing people's photos. It provides straightforward implementation for users to upload their photo and a relatively quick way to call and display these images for users to sift through.
-
-### Acknowledgments
-ALX School staff - For the help, advice and resources they provided us with during this project and during all our curriculum.
-
-Cohort 8 and all ALX students - For your friendship, invaluable support, and insight not only for this project, but over the last year.
-
-Romain Bonhomme - For his incredible Vue.js knowledge and overall front-end good practices.
-
-Valentin Roudge - For his help and advice in Node.js and architecture best practices.
-
-YOU - For reading this documentation and testing out PeopleR. We hope you enjoyed the ride!
-
-Related projects
-AirBnB Clone: a simple web app made in Python, Flask, and JQuery.
-
-Simple Shell: a command line interpreter that replicates the sh program.
